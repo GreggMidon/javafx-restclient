@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane style="-fx-background-color: #787878;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.anfcorp.rest.client.view.InputPanelController">
+   <children>
+      <HBox>
+         <children>
+            <ChoiceBox fx:id="methodChoiceBox" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets left="10.0" top="12.0" />
+               </HBox.margin>
+            </ChoiceBox>
+            <TextField fx:id="urlField" minWidth="-Infinity" prefHeight="25.0" prefWidth="650.0" promptText="Enter URL">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="sendButton" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSend" prefWidth="65.0" text="Send">
+               <HBox.margin>
+                  <Insets right="5.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="clearButton" minWidth="-Infinity" mnemonicParsing="false" prefWidth="65.0" text="Clear">
+               <HBox.margin>
+                  <Insets right="10.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
